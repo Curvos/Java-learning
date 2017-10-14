@@ -40,7 +40,7 @@ public class GUI
 			}
 		});
 
-		// Resolver reso = new Resolver("1,2 3,4 5,6");
+		// Resolver reso = new Resolver("1.0,2 3.0,4 5.0,6");
 	}
 
 	/**
@@ -75,7 +75,7 @@ public class GUI
 		panel_1.add(lblNewLabel);
 
 		areaA = new JTextField();
-		areaA.setText("1.0,2 4.0,5 7.0,6");
+		areaA.setText("1.5,2 4.3,5 7.4,6 3.2,7");
 		areaA.setFont(new Font("ËÎÌו", Font.PLAIN, 16));
 		areaA.setBounds(14, 13, 490, 43);
 		panel_1.add(areaA);
@@ -128,7 +128,7 @@ public class GUI
 		panel.add(lblb);
 
 		areaB = new JTextField();
-		areaB.setText("2.0,3 9.0,4");
+		areaB.setText("2.0,3 9.0,4 2.2,7");
 		areaB.setFont(new Font("ËÎÌו", Font.PLAIN, 16));
 		areaB.setColumns(10);
 		areaB.setBounds(14, 13, 490, 43);
