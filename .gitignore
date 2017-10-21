@@ -2,10 +2,15 @@
 .metadata/
 .recommenders/
 
-#eclipse folder and files
+# eclipse folder and files
 .settings/
 *.classpath
 *.project
+
+# idea
+*.xml
+*.iml
+.idea/
 
 # .doc and .docx document
 *.doc
