@@ -53,7 +53,7 @@ public class GUI
 	private void initialize()
 	{
 		frmJava = new JFrame();
-		frmJava.setFont(new Font("΢���ź�", Font.PLAIN, 12));
+		frmJava.setFont(new Font("微软雅黑", Font.PLAIN, 12));
 		frmJava.setTitle("JAVA\u5206\u9694\u7B26\u5339\u914D");
 		frmJava.setBounds(100, 100, 665, 354);
 		frmJava.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,18 +61,18 @@ public class GUI
 
 		textField = new JTextField();
 		textField.setText("a=(b+c)*(d+e)");
-		textField.setFont(new Font("΢���ź�", Font.PLAIN, 17));
+		textField.setFont(new Font("微软雅黑", Font.PLAIN, 17));
 		textField.setBounds(70, 100, 454, 40);
 		frmJava.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		JLabel lblNewLabel = new JLabel("Please input a JAVA expression:");
-		lblNewLabel.setFont(new Font("΢���ź�", Font.PLAIN, 17));
+		lblNewLabel.setFont(new Font("微软雅黑", Font.PLAIN, 17));
 		lblNewLabel.setBounds(70, 70, 300, 18);
 		frmJava.getContentPane().add(lblNewLabel);
 
 		JButton btnNewButton = new JButton("Verify");
-		btnNewButton.setFont(new Font("΢���ź�", Font.PLAIN, 15));
+		btnNewButton.setFont(new Font("微软雅黑", Font.PLAIN, 15));
 		btnNewButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)

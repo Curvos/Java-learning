@@ -20,22 +20,22 @@ public class Eg_14_6
 
 		case RED:
 		{
-			System.out.println("红色");
+			System.out.println("绾㈣壊");
 			break;
 		}
 		case GREEN:
 		{
-			System.out.println("绿色");
+			System.out.println("缁胯壊");
 			break;
 		}
 		case BLUE:
 		{
-			System.out.println("蓝色");
+			System.out.println("钃濊壊");
 			break;
 		}
 		default:
 		{
-			System.out.println("未知颜色");
+			System.out.println("鏈煡棰滆壊");
 			break;
 		}
 

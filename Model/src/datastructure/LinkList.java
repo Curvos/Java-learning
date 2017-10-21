@@ -62,7 +62,7 @@ public class LinkList
 		}
 		if (j > i || p == null)
 		{
-			throw new Exception("µÚ" + i + "¸öÔªËØ²»´æÔÚ");
+			throw new Exception("ç¬¬" + i + "ä¸ªå…ƒç´ ä¸å­˜åœ¨");
 		}
 		return p.data;
 	}
@@ -77,7 +77,7 @@ public class LinkList
 			++j;
 		}
 		if (j > i - 1 || p == null)
-			throw new Exception("²åÈëÎ»ÖÃ²»ºÏ·¨");
+			throw new Exception("æ’å…¥ä½ç½®ä¸åˆæ³•");
 		Node s = new Node(x);
 		s.next = p.next;
 		p.next = s;

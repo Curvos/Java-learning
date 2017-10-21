@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//Èë¿Úº¯Êı
+//å…¥å£å‡½æ•°
 public class Delegate
 {
 
 	public static void main(String[] args) throws Exception
 	{
-		// Í¨¹ıÏà¶ÔEclipse¹¤³ÌÏà¶ÔÂ·¾¶¶ÁÈ¡ÎÄ¼ş²¢½«»ùÒòÃûÖğĞĞ¶ÁÈëÈı¸öÊı×é
+		// é€šè¿‡ç›¸å¯¹Eclipseå·¥ç¨‹ç›¸å¯¹è·¯å¾„è¯»å–æ–‡ä»¶å¹¶å°†åŸºå› åé€è¡Œè¯»å…¥ä¸‰ä¸ªæ•°ç»„
 		File f1 = new File("res\\no1genes.txt");
 		File f2 = new File("res\\no2genes.txt");
 		File f3 = new File("res\\no3genes.txt");
@@ -43,11 +43,11 @@ public class Delegate
 		List<String> List = g.Search(Set1, Set2);
 
 		System.out.println(List);
-		System.out.println("¹²" + g.getCont() + "¸öÏàÍ¬»ùÒò");
-		// ÔÚresÎÄ¼ş¼ĞÏÂ´´½¨Ã÷ÎªResultµÄtxtÎÄ¼ş
+		System.out.println("å…±" + g.getCont() + "ä¸ªç›¸åŒåŸºå› ");
+		// åœ¨resæ–‡ä»¶å¤¹ä¸‹åˆ›å»ºæ˜ä¸ºResultçš„txtæ–‡ä»¶
 		File f = new File("res\\Result.txt");
 
-		// Ê¹ÓÃ×Ö·ûÁ÷Êä³öÊı¾İ
+		// ä½¿ç”¨å­—ç¬¦æµè¾“å‡ºæ•°æ®
 		Writer o = null;
 		o = new FileWriter(f);
 		for (int i = 0; i < List.size(); i++)

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Resolver
 {
-	// ´æ´¢¶àÏîÊ½ÏîÊı
+	// å­˜å‚¨å¤šé¡¹å¼é¡¹æ•°
 	private int n = 1;
 	private char[] a;
 	private double[] coefs = new double[256];
@@ -35,7 +35,7 @@ public class Resolver
 		try
 		{
 			ps = new PrintStream(new FileOutputStream(file));
-			ps.println(str);// ÍùÎÄ¼şÀïĞ´Èë×Ö·û´®
+			ps.println(str);// å¾€æ–‡ä»¶é‡Œå†™å…¥å­—ç¬¦ä¸²
 			ps.close();
 		} catch (FileNotFoundException e)
 		{

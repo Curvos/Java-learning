@@ -34,7 +34,7 @@ public class SeqList
 	public void remove(int index) throws Exception
 	{
 		if (index < 0 || index > curLen - 1)
-			throw new Exception("É¾³ıÎ»ÖÃ²»ºÏ·¨");
+			throw new Exception("åˆ é™¤ä½ç½®ä¸åˆæ³•");
 		for (int i = index; i < curLen - 1; i++)
 			listElem[i] = listElem[i + 1];
 		curLen -= 1;
@@ -43,9 +43,9 @@ public class SeqList
 	public void insert(int index, Object x) throws Exception
 	{
 		if (curLen == listElem.length)
-			throw new Exception("Ë³Ğò±íÒÑÂú");
+			throw new Exception("é¡ºåºè¡¨å·²æ»¡");
 		if (index < 0 || index > curLen)
-			throw new Exception("²åÈëÎ»ÖÃ²»ºÏ·¨");
+			throw new Exception("æ’å…¥ä½ç½®ä¸åˆæ³•");
 		for (int i = curLen; i > index; i--)
 			listElem[i] = listElem[i - 1];
 		listElem[index] = x;

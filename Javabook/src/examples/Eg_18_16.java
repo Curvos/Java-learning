@@ -13,18 +13,18 @@ public class Eg_18_16
 
 	public static void main(String[] args)
 	{
-		JFrame frame = new JFrame("测试软件");
+		JFrame frame = new JFrame("娴嬭瘯杞欢");
 		Container cont = frame.getContentPane();
 		JTabbedPane tab = null;
 		tab = new JTabbedPane(JTabbedPane.TOP);
 		JPanel pan1 = new JPanel();
 		JPanel pan2 = new JPanel();
-		JButton but = new JButton("按钮");
-		JLabel lab = new JLabel("标签");
+		JButton but = new JButton("鎸夐挳");
+		JLabel lab = new JLabel("鏍囩");
 		pan1.add(but);
 		pan2.add(lab);
-		tab.add("图片选项", pan1);
-		tab.add("文字选项", pan2);
+		tab.add("鍥剧墖閫夐」", pan1);
+		tab.add("鏂囧瓧閫夐」", pan2);
 		cont.add(tab);
 		frame.setSize(800, 1200);
 		frame.setLocation(300, 200);

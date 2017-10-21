@@ -45,10 +45,10 @@ public class register_db extends conn_db implements ActionListener
 	{
 		if (e.getSource() == okButton)
 		{
-			if (textacc.getText().equals("")) // ÅĞ¶ÏÓÃ»§ÊäÈëÊÇ·ñÎª¿Õ£»
-				JOptionPane.showMessageDialog(null, "ÇëÊäÈëÕËºÅ", "¾¯¸æ¶Ô»°¿ò", JOptionPane.WARNING_MESSAGE);
+			if (textacc.getText().equals("")) // åˆ¤æ–­ç”¨æˆ·è¾“å…¥æ˜¯å¦ä¸ºç©ºï¼›
+				JOptionPane.showMessageDialog(null, "è¯·è¾“å…¥è´¦å·", "è­¦å‘Šå¯¹è¯æ¡†", JOptionPane.WARNING_MESSAGE);
 			else if (textname.getText().equals(""))
-				JOptionPane.showMessageDialog(null, "ÇëÊäÈëĞÕÃû", "¾¯¸æ¶Ô»°¿ò", JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(null, "è¯·è¾“å…¥å§“å", "è­¦å‘Šå¯¹è¯æ¡†", JOptionPane.WARNING_MESSAGE);
 			else
 			{
 				String acc = textacc.getText();
@@ -59,7 +59,7 @@ public class register_db extends conn_db implements ActionListener
 					writeInSql(acc, name);
 				} catch (Exception e1)
 				{
-					System.out.println("²åÈëÊ§°Ü");
+					System.out.println("æ’å…¥å¤±è´¥");
 					e1.printStackTrace();
 				}
 			}
@@ -77,23 +77,23 @@ public class register_db extends conn_db implements ActionListener
 		Connection con = super.con;
 		Statement stmt = con.createStatement();
 
-		// ´´½¨²¢¼ì²éÊı¾İ¿â±í£¬ÈôÃ»ÓĞ"my"±í£¬Ôò´´½¨±í²¢Ö´ĞĞ²åÈë²Ù×÷£¬Èô±íÒÑ´æÔÚ£¬ÔòÖ±½ÓÖ´ĞĞ²Ù×÷£¬²åÈëÊı¾İ
+		// åˆ›å»ºå¹¶æ£€æŸ¥æ•°æ®åº“è¡¨ï¼Œè‹¥æ²¡æœ‰"my"è¡¨ï¼Œåˆ™åˆ›å»ºè¡¨å¹¶æ‰§è¡Œæ’å…¥æ“ä½œï¼Œè‹¥è¡¨å·²å­˜åœ¨ï¼Œåˆ™ç›´æ¥æ‰§è¡Œæ“ä½œï¼Œæ’å…¥æ•°æ®
 		sql = "create table if not exists my(account varchar(10),name varchar(20))";
 
 		stmt.executeUpdate(sql);
-		// System.out.println(sql); //²é´í£»
-		System.out.println("´´½¨±í³É¹¦");
+		// System.out.println(sql); //æŸ¥é”™ï¼›
+		System.out.println("åˆ›å»ºè¡¨æˆåŠŸ");
 
-		// ²åÈë´æÎÄ±¾¿òÖĞ»ñÈ¡µÄÊı¾İ£»
+		// æ’å…¥å­˜æ–‡æœ¬æ¡†ä¸­è·å–çš„æ•°æ®ï¼›
 		sql = "insert into my(account,name) values('" + acc + "','" + name + "')";
 		int rw = stmt.executeUpdate(sql);
 		// System.out.println(sql);
 		if (rw <= 0)
-		{ // ÅĞ¶ÏÊı¾İÊÇ·ñ²åÈë³É¹¦
-			JOptionPane.showMessageDialog(null, "×¢²áÊ§°Ü");
+		{ // åˆ¤æ–­æ•°æ®æ˜¯å¦æ’å…¥æˆåŠŸ
+			JOptionPane.showMessageDialog(null, "æ³¨å†Œå¤±è´¥");
 		} else
 		{
-			JOptionPane.showMessageDialog(null, "×¢²á³É¹¦");
+			JOptionPane.showMessageDialog(null, "æ³¨å†ŒæˆåŠŸ");
 		}
 	}
 }

@@ -7,7 +7,7 @@ public class DoublingTest
 {
 
 	public static double timeTrial(int N)
-	{// Îª´¦ÀíN¸öËæ»úµÄÁùÕûÊıµÄ ThreeSum.count()¼ÆÊ±
+	{// ä¸ºå¤„ç†Nä¸ªéšæœºçš„å…­æ•´æ•°çš„ ThreeSum.count()è®¡æ—¶
 		int MAX = 1000000;
 		int[] a = new int[N];
 		for (int i = 0; i < N; i++)
@@ -18,7 +18,7 @@ public class DoublingTest
 	}
 
 	public static void main(String[] args)
-	{// ´òÓ¡ÔËĞĞÊ±¼äµÄ±í¸ñ
+	{// æ‰“å°è¿è¡Œæ—¶é—´çš„è¡¨æ ¼
 		for (int N = 250; true; N += N)
 		{
 			double time = timeTrial(N);

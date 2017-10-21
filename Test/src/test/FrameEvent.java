@@ -20,7 +20,7 @@ public class FrameEvent extends JFrame implements KeyListener
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		setFocusable(true);
-		textarea.setText("Çë°´ÈÎÒâ¼ü:");
+		textarea.setText("è¯·æŒ‰ä»»æ„é”®:");
 		c.add(textarea);
 		addKeyListener(this);
 		setSize(350, 300);
@@ -30,11 +30,11 @@ public class FrameEvent extends JFrame implements KeyListener
 
 	public void keyPressed(KeyEvent e)
 	{
-		// String line1="°´¼ü:"+e.getKeyChar()+"\n";
-		// String line2="a°´¼üÊÇ·ñÎªAction¼ü:"+e.isActionKey();
+		// String line1="æŒ‰é”®:"+e.getKeyChar()+"\n";
+		// String line2="aæŒ‰é”®æ˜¯å¦ä¸ºActioné”®:"+e.isActionKey();
 		// @SuppressWarnings("static-access")
 		// String mKey=e.getKeyModifiersText(e.getModifiers());
-		// String line3="ÊÇ·ñ°´ÏÂModifier¼ü"+(mKey.equals("")?"·ñ":"ÊÇ,Æä¼üÎª"+mKey);
+		// String line3="æ˜¯å¦æŒ‰ä¸‹Modifieré”®"+(mKey.equals("")?"å¦":"æ˜¯,å…¶é”®ä¸º"+mKey);
 		// textarea.setText(line1+"\n"+line2+"\n"+line3+"\n");
 		if (e.getKeyCode() == KeyEvent.VK_SPACE)
 		{

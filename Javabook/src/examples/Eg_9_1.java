@@ -21,11 +21,11 @@ public class Eg_9_1 {
 		myThread mt1=new myThread("Thread1");
 		myThread mt2=new myThread("Thread2");
 		
-//程序依然是顺序进行，并未实现线程		
+//绋嬪簭渚濈劧鏄『搴忚繘琛岋紝骞舵湭瀹炵幇绾跨▼		
 //		mt1.run();
 //		mt2.run();
 
-//需要实现多线程,需要调用Thread类的start()方法
+//闇�瑕佸疄鐜板绾跨▼,闇�瑕佽皟鐢═hread绫荤殑start()鏂规硶
 		mt1.start();
 		mt2.start();
 		

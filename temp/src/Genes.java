@@ -9,13 +9,13 @@ public class Genes
 	private int cont;
 
 	public int getCont()
-	{// 返回计数
+	{// 杩斿洖璁℃暟
 		return cont;
 	}
 
 	public List<String> Search(List<String> Set1, List<String> Set2)
 	{
-		// 创建计数变量
+		// 鍒涘缓璁℃暟鍙橀噺
 
 		List<String> List = new ArrayList<String>();
 

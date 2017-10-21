@@ -45,7 +45,7 @@ public class MyWindow
 	private boolean location_flag = false;
 	// public static Submit sub = new Submit();
 	private Timer.TimeThread myThread;
-	// ´Ë´¦Èô½öĞ´Îª¡°public static JLabel textConfirm¡±»á³öÏÖ¿ÕÖ¸Õë´íÎó£¬why£¿£¿£¿
+	// æ­¤å¤„è‹¥ä»…å†™ä¸ºâ€œpublic static JLabel textConfirmâ€ä¼šå‡ºç°ç©ºæŒ‡é’ˆé”™è¯¯ï¼Œwhyï¼Ÿï¼Ÿï¼Ÿ
 	private Timer timer = new Timer();
 	public static JTextField nameField;
 	private JPasswordField passwordField;
@@ -111,7 +111,7 @@ public class MyWindow
 		frmFrame.getContentPane().setLayout(null);
 
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 30));
+		tabbedPane.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 30));
 		tabbedPane.setBounds(0, 0, 854, 483);
 		frmFrame.getContentPane().add(tabbedPane);
 
@@ -123,7 +123,7 @@ public class MyWindow
 		txtrhttpmonihupaiorg.setEditable(false);
 		txtrhttpmonihupaiorg.setText(
 				"\u529F\u80FD\u4E00\uFF1A\u62CD\u724C\u81EA\u52A8\u51FA\u4EF7\u3001\u63D0\u4EA4\r\n\t1.\u9002\u7528\u7F51\u7AD9\uFF1Ahttp://moni.51hupai.org/\u3002\r\n\t2.\u6253\u5F00\u5E76\u52A0\u8F7D\u7F51\u7AD9\u5B8C\u5B8C\u6BD5\u540E\uFF0C\u5728\u201C\u5750\u6807\u5B9A\u4F4D\u201D\u9009\u9879\u5361\u4E0B\u70B9\u51FB\u201C\u5F00\u59CB\u5B9A\u4F4D\u201D\uFF0C\r\n\t\u4E4B\u540E\u5C06\u9F20\u6807\u79FB\u52A8\u81F3\u76F8\u5E94\u4F4D\u7F6E\u65F6\u5206\u522B\u6309\u4E0B\u952E\u76D8\"A\"\"S\"\"D\"\u952E\u8FDB\u884C\u5BF9\u5E94\u5B9A\u4F4D\u3002\r\n\t3.\u70B9\u51FB\u8BE5\u8F6F\u4EF6\u201C\u65F6\u95F4\u8BBE\u7F6E\u201D\u9009\u9879\u5361\u4E0B\u7684\u201C\u5F00\u59CB\u8BA1\u65F6\u201D\u6309\u94AE\uFF0C\u4E4B\u540E\u624B\u52A8\u5BF9\u9F50\u7F51\r\n\t\u9875\u65F6\u95F4\uFF0C\u6B64\u540E\u8BF7\u4FDD\u6301\u7F51\u9875\u65E0\u906E\u6321\uFF0C\u4E0D\u5BF9\u7535\u8111\u8FDB\u884C\u64CD\u4F5C\u3002\r\n\t4.\u572811:29:48\u65F6\u8F6F\u4EF6\u81EA\u52A8\u5B8C\u6210\u201C\u52A0\u4EF7700\u201D\u7684\u64CD\u4F5C\uFF0C\u572811:29:55\u65F6\u81EA\u52A8\u51FA\u4EF7\u3002\r\n\r\n\u529F\u80FD\u4E8C\uFF1A\u6570\u636E\u5E93\u67E5\u8BE2\u53CA\u66F4\u65B0\u64CD\u4F5C\r\n\t\u91CD\u8981\uFF01\u9ED8\u8BA4\u94FE\u63A5mysql\u7684\u8D26\u6237\u53CA\u5BC6\u7801\u5747\u4E3A\u201Croot\u201D\uFF0C\u82E5\u672C\u5730\u914D\u7F6E\u4E0D\u540C\u53EF\u4E8EDataBase\r\n\t\u7C7B\u4E0B\u4FEE\u6539\uFF1B\u9ED8\u8BA4\u94FE\u63A5\u6570\u636E\u5E93\u201Cbio2015\u201D\uFF0C\u82E5\u672C\u5730\u65E0\u8BE5\u540D\u79F0\u6570\u636E\u5E93\u8BF7\u63D0\u524D\u521B\u5EFA\u3002\r\n\t1.\u5728\u201C\u6570\u636E\u67E5\u8BE2\u201D\u9009\u9879\u5361\u4E0B\u767B\u9646\u6570\u636E\u5E93\uFF0C\u7528\u6237\u540D\u548C\u5BC6\u7801\u5747\u4E3Aroot(\u56E0\u672C\u5730\u914D\u7F6E\u4E0D\u540C\r\n\t\u53EF\u80FD\u4F1A\u6709\u5DEE\u5F02)\u3002\r\n\t2.\u767B\u9646\u540E\u5206\u522B\u70B9\u51FB\u201C\u5BFC\u5165\u8868\u7ED3\u6784\u201C\u4EE5\u53CA\u201D\u4ECE\u6587\u672C\u5BFC\u5165\u8868\u201C\u6309\u94AE\uFF0C\u5373\u53EF\u5BFC\u5165\u9884\u521B\u5EFA\u597D\u7684\uFF0C\t   \t\u542B5\u6761\u8BB0\u5F55\u3002\u70B9\u51FB\u201C\u67E5\u8BE2\u6240\u6709\u6570\u636E\u201D\u6309\u94AE\u540E\u5373\u53EF\u8F93\u51FA\u8868\u4E0B\u7684\u6240\u6709\u8BB0\u5F55\u3002\r\n\t3.\u5728\u201C\u6570\u636E\u7BA1\u7406\u201D\u9009\u9879\u5361\u4E0B\u53EF\u6267\u884CSQL\u8BED\u53E5\u5BF9\u6570\u636E\u5E93\u8FDB\u884C\u64CD\u4F5C\uFF0C\u201C\u6267\u884C\u67E5\u8BE2\u201D\r\n\t\u548C\u201C\u6267\u884C\u7EF4\u62A4\u201D\u5206\u522B\u652F\u6301SQL\u7684SELECT\u8BED\u6CD5\u548CUPDATE\u8BED\u6CD5\uFF08\u6267\u884C\u540E\u8BF7\u5207\r\n\t\u6362\u81F3\u201C\u6570\u636E\u67E5\u8BE2\u201D\u9009\u9879\u5361\u8FDB\u884C\u786E\u8BA4\uFF09\u3002\r\n\t4.\u201C\u6D4B\u8BD5\u8BED\u53E5\u201D\u9009\u9879\u5361\u4E0B\u63D0\u4F9B\u4E86\u76F8\u5173SQL\u8BED\u53E5\u4EE5\u4F9B\u529F\u80FD\u6D4B\u8BD5\u3002\r\n\r\n\t\t\t            \u59D3\u540D\uFF1A\u7AE0\u7693\u5B87    \u5B66\u53F7\uFF1A1530416012\t");
-		txtrhttpmonihupaiorg.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 15));
+		txtrhttpmonihupaiorg.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 15));
 		txtrhttpmonihupaiorg.setBounds(113, 17, 674, 418);
 		basicTab.add(txtrhttpmonihupaiorg);
 
@@ -132,40 +132,40 @@ public class MyWindow
 		corTab.setLayout(null);
 
 		JLabel label = new JLabel("<\u81EA\u5B9A\u4E49\u52A0\u4EF7\u5E45\u5EA6>\u6587\u672C\u6846\u5B9A\u4F4D");
-		label.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		label.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		label.setBounds(65, 118, 376, 29);
 		corTab.add(label);
 
 		JLabel lblNewLabel = new JLabel("<\u52A0\u4EF7>\u6309\u94AE\u5B9A\u4F4D");
-		lblNewLabel.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		lblNewLabel.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		lblNewLabel.setBounds(65, 168, 201, 29);
 		corTab.add(lblNewLabel);
 
 		// JLabel textCustom = new JLabel("x1,y1");
 		textCustom.setHorizontalAlignment(SwingConstants.CENTER);
-		textCustom.setFont(new Font("ºÚÌå", Font.ITALIC, 21));
+		textCustom.setFont(new Font("é»‘ä½“", Font.ITALIC, 21));
 		textCustom.setBounds(503, 120, 151, 29);
 		corTab.add(textCustom);
 
 		// JLabel textRaise = new JLabel("x2,y2");
 		textRaise.setHorizontalAlignment(SwingConstants.CENTER);
-		textRaise.setFont(new Font("ºÚÌå", Font.ITALIC, 21));
+		textRaise.setFont(new Font("é»‘ä½“", Font.ITALIC, 21));
 		textRaise.setBounds(491, 168, 163, 29);
 		corTab.add(textRaise);
 
 		// JLabel textConfirm = new JLabel("x3,y3");
 		textConfirm.setHorizontalAlignment(SwingConstants.CENTER);
-		textConfirm.setFont(new Font("ºÚÌå", Font.ITALIC, 21));
+		textConfirm.setFont(new Font("é»‘ä½“", Font.ITALIC, 21));
 		textConfirm.setBounds(491, 215, 163, 38);
 		corTab.add(textConfirm);
 
 		JLabel label_1 = new JLabel("<\u51FA\u4EF7>\u6309\u94AE\u5B9A\u4F4D");
-		label_1.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		label_1.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		label_1.setBounds(65, 218, 201, 29);
 		corTab.add(label_1);
 
 		JButton Location = new JButton("\u5F00\u59CB\u5B9A\u4F4D");
-		Location.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		Location.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		Location.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -175,13 +175,13 @@ public class MyWindow
 
 					if (location_flag == false)
 					{
-						Location.setText("½áÊø¶¨Î»");
+						Location.setText("ç»“æŸå®šä½");
 						location_flag = true;
 						textCustom.setEnabled(true);
 						textRaise.setEnabled(true);
 						textConfirm.setEnabled(true);
 
-						// ´Ë´¦µÄ¼üÅÌ¼àÌıÊÊÅäÆ÷Óï·¨ĞèÒªÔÙ¼ÓÒÔÀí½â
+						// æ­¤å¤„çš„é”®ç›˜ç›‘å¬é€‚é…å™¨è¯­æ³•éœ€è¦å†åŠ ä»¥ç†è§£
 						Location.addKeyListener(new KeyAdapter()
 						{
 							public void keyPressed(KeyEvent e)
@@ -230,14 +230,14 @@ public class MyWindow
 							}
 						});
 					} /*
-						 * else// ÎŞĞ§£¬¼àÊÓÆ÷Î´Í£Ö¹£¬´ıÓÅ»¯ { Location.setText("¿ªÊ¼¶¨Î»");
+						 * else// æ— æ•ˆï¼Œç›‘è§†å™¨æœªåœæ­¢ï¼Œå¾…ä¼˜åŒ– { Location.setText("å¼€å§‹å®šä½");
 						 * textCustom.setEnabled(false);
 						 * textRaise.setEnabled(false);
 						 * textConfirm.setEnabled(false); }
 						 */
 					else if (location_flag == true)
 					{
-						Location.setText("¿ªÊ¼¶¨Î»");
+						Location.setText("å¼€å§‹å®šä½");
 						location_flag = false;
 						textCustom.setEnabled(false);
 						textRaise.setEnabled(false);
@@ -252,17 +252,17 @@ public class MyWindow
 		corTab.add(Location);
 
 		JLabel lbla = new JLabel("\u5FEB\u6377\u952E:A");
-		lbla.setFont(new Font("Î¢ÈíÑÅºÚ", Font.ITALIC, 24));
+		lbla.setFont(new Font("å¾®è½¯é›…é»‘", Font.ITALIC, 24));
 		lbla.setBounds(653, 118, 122, 29);
 		corTab.add(lbla);
 
 		JLabel lbls = new JLabel("\u5FEB\u6377\u952E:S");
-		lbls.setFont(new Font("Î¢ÈíÑÅºÚ", Font.ITALIC, 24));
+		lbls.setFont(new Font("å¾®è½¯é›…é»‘", Font.ITALIC, 24));
 		lbls.setBounds(650, 168, 122, 29);
 		corTab.add(lbls);
 
 		JLabel lbld = new JLabel("\u5FEB\u6377\u952E:D");
-		lbld.setFont(new Font("Î¢ÈíÑÅºÚ", Font.ITALIC, 24));
+		lbld.setFont(new Font("å¾®è½¯é›…é»‘", Font.ITALIC, 24));
 		lbld.setBounds(650, 216, 122, 29);
 		corTab.add(lbld);
 
@@ -272,21 +272,21 @@ public class MyWindow
 
 		JLabel label_2 = new JLabel("\u5BF9\u9F50\u7F51\u9875\u65F6\u95F4\uFF1A");
 		label_2.setBounds(93, 70, 196, 32);
-		label_2.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		label_2.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		timeTab.add(label_2);
 
 		JLabel label_3 = new JLabel("\u5206");
-		label_3.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		label_3.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		label_3.setBounds(249, 133, 28, 27);
 		timeTab.add(label_3);
 
 		JLabel label_4 = new JLabel("\u65F6");
-		label_4.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		label_4.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		label_4.setBounds(156, 131, 28, 31);
 		timeTab.add(label_4);
 
 		JLabel label_5 = new JLabel("\u79D2");
-		label_5.setFont(new Font("Î¢ÈíÑÅºÚ Light", Font.PLAIN, 16));
+		label_5.setFont(new Font("å¾®è½¯é›…é»‘ Light", Font.PLAIN, 16));
 		label_5.setBounds(343, 136, 55, 18);
 		timeTab.add(label_5);
 
@@ -303,7 +303,7 @@ public class MyWindow
 				}
 			}
 		});
-		H_up.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		H_up.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		H_up.setBounds(93, 170, 62, 32);
 		timeTab.add(H_up);
 
@@ -320,7 +320,7 @@ public class MyWindow
 				}
 			}
 		});
-		H_down.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		H_down.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		H_down.setBounds(93, 200, 62, 32);
 		timeTab.add(H_down);
 
@@ -337,7 +337,7 @@ public class MyWindow
 			}
 		});
 		M_up.setForeground(Color.BLUE);
-		M_up.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		M_up.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		M_up.setBounds(186, 170, 62, 32);
 		timeTab.add(M_up);
 
@@ -354,7 +354,7 @@ public class MyWindow
 			}
 		});
 		M_down.setForeground(Color.RED);
-		M_down.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		M_down.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		M_down.setBounds(186, 200, 62, 32);
 		timeTab.add(M_down);
 
@@ -371,7 +371,7 @@ public class MyWindow
 			}
 		});
 		S_up.setForeground(Color.BLUE);
-		S_up.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		S_up.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		S_up.setBounds(279, 170, 62, 32);
 		timeTab.add(S_up);
 
@@ -388,7 +388,7 @@ public class MyWindow
 			}
 		});
 		S_down.setForeground(Color.RED);
-		S_down.setFont(new Font("ºÚÌå", Font.PLAIN, 22));
+		S_down.setFont(new Font("é»‘ä½“", Font.PLAIN, 22));
 		S_down.setBounds(279, 200, 62, 32);
 		timeTab.add(S_down);
 
@@ -414,7 +414,7 @@ public class MyWindow
 		timeTab.add(secondText);
 
 		JButton startTimer = new JButton("\u5F00\u59CB\u8BA1\u65F6");
-		startTimer.setFont(new Font("ºÚÌå", Font.PLAIN, 24));
+		startTimer.setFont(new Font("é»‘ä½“", Font.PLAIN, 24));
 
 		startTimer.addActionListener(new ActionListener()
 		{
@@ -436,20 +436,20 @@ public class MyWindow
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				if (reSet.getText().equals("ÔİÍ£"))
+				if (reSet.getText().equals("æš‚åœ"))
 				{
 					timer.setFlag(false);
-					reSet.setText("¼ÌĞø");
+					reSet.setText("ç»§ç»­");
 				} else
 				{
 					timer.setFlag(true);
-					reSet.setText("ÔİÍ£");
+					reSet.setText("æš‚åœ");
 					myThread = timer.new TimeThread();
 					myThread.start();
 				}
 			}
 		});
-		reSet.setFont(new Font("ºÚÌå", Font.PLAIN, 24));
+		reSet.setFont(new Font("é»‘ä½“", Font.PLAIN, 24));
 		reSet.setBounds(402, 181, 160, 52);
 		timeTab.add(reSet);
 
@@ -458,12 +458,12 @@ public class MyWindow
 		database.setLayout(null);
 
 		JLabel UserName = new JLabel("\u7528\u6237\u540D");
-		UserName.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		UserName.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		UserName.setBounds(38, 98, 84, 29);
 		database.add(UserName);
 
 		JLabel PassWord = new JLabel("\u5BC6 \u7801");
-		PassWord.setFont(new Font("ËÎÌå", Font.PLAIN, 28));
+		PassWord.setFont(new Font("å®‹ä½“", Font.PLAIN, 28));
 		PassWord.setBounds(38, 157, 84, 29);
 		database.add(PassWord);
 
@@ -482,16 +482,16 @@ public class MyWindow
 			{
 				if (Login.Log(nameField.getText(), String.valueOf(passwordField.getPassword())) == true)
 				{
-					nameField.setText("µÇÂ½³É¹¦£¡");
+					nameField.setText("ç™»é™†æˆåŠŸï¼");
 					conn = DataBase.getDataBaseConnection();
 					setEnabled();
 				} else
 				{
-					nameField.setText("ÓÃ»§Ãû»òÃÜÂë´íÎó£¡");
+					nameField.setText("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼");
 				}
 			}
 		});
-		button.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		button.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		button.setBounds(134, 218, 141, 37);
 		database.add(button);
 
@@ -520,8 +520,8 @@ public class MyWindow
 
 				Object[] temp = new Object[DataBase.columns];
 				tableModel.setRowCount(0);
-				for (int i = 0; i < DataBase.rows; i++) // ĞèÒªÍêÉÆ
-														// Ò²Ğíµü´úÇó³öĞĞÊı¼´¿É
+				for (int i = 0; i < DataBase.rows; i++) // éœ€è¦å®Œå–„
+														// ä¹Ÿè®¸è¿­ä»£æ±‚å‡ºè¡Œæ•°å³å¯
 				{
 					for (int j = 0; j < DataBase.columns; j++)
 					{
@@ -533,11 +533,11 @@ public class MyWindow
 
 			}
 		});
-		Select_button.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		Select_button.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		Select_button.setBounds(134, 267, 141, 37);
 		database.add(Select_button);
 
-		String[] titles = { "±êÊéºÅÂë", "ÃÜÂë", "Éí·İÖ¤ºÅÂë", "ĞÕÃû", "±êÊéÊ¹ÓÃ´ÎÊı", "±êÊéÓĞĞ§ÆÚÏŞ" };
+		String[] titles = { "æ ‡ä¹¦å·ç ", "å¯†ç ", "èº«ä»½è¯å·ç ", "å§“å", "æ ‡ä¹¦ä½¿ç”¨æ¬¡æ•°", "æ ‡ä¹¦æœ‰æ•ˆæœŸé™" };
 		Object[][] use = {};
 		tableModel = new DefaultTableModel(use, titles);
 
@@ -565,7 +565,7 @@ public class MyWindow
 				}
 			}
 		});
-		createTable.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		createTable.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		createTable.setBounds(357, 358, 141, 37);
 		database.add(createTable);
 
@@ -592,7 +592,7 @@ public class MyWindow
 				}
 			}
 		});
-		button_1.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		button_1.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		button_1.setBounds(524, 358, 141, 37);
 		database.add(button_1);
 
@@ -613,7 +613,7 @@ public class MyWindow
 
 			}
 		});
-		button_2.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		button_2.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		button_2.setBounds(690, 358, 141, 37);
 		database.add(button_2);
 
@@ -633,7 +633,7 @@ public class MyWindow
 		database.add(checkBox_export);
 
 		JLabel lblNewLabel_1 = new JLabel("\u8FDB\u884C\u64CD\u4F5C\u524D\u8BF7\u5148\u767B\u9646\uFF01");
-		lblNewLabel_1.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		lblNewLabel_1.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		lblNewLabel_1.setBounds(38, 23, 170, 18);
 		database.add(lblNewLabel_1);
 
@@ -644,7 +644,7 @@ public class MyWindow
 		lblsql = new JLabel("\u8BF7\u767B\u9646\u6570\u636E\u5E93");
 		lblsql.setEnabled(false);
 		lblsql.setHorizontalAlignment(SwingConstants.CENTER);
-		lblsql.setFont(new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 18));
+		lblsql.setFont(new Font("å¾®è½¯é›…é»‘", Font.BOLD, 18));
 		lblsql.setBounds(108, 98, 138, 46);
 		SQL.add(lblsql);
 
@@ -664,7 +664,7 @@ public class MyWindow
 				}
 			}
 		});
-		run.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		run.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		run.setBounds(105, 196, 141, 37);
 		SQL.add(run);
 
@@ -686,7 +686,7 @@ public class MyWindow
 				queryPane.setText("");
 			}
 		});
-		reset.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		reset.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		reset.setBounds(105, 245, 141, 37);
 		SQL.add(reset);
 
@@ -706,8 +706,8 @@ public class MyWindow
 				Object[] temp = new Object[DataBase.columns];
 				tableModel.setRowCount(0);
 
-				for (int i = 0; i < DataBase.rows; i++) // ĞèÒªÍêÉÆ
-				// Ò²Ğíµü´úÇó³öĞĞÊı¼´¿É
+				for (int i = 0; i < DataBase.rows; i++) // éœ€è¦å®Œå–„
+				// ä¹Ÿè®¸è¿­ä»£æ±‚å‡ºè¡Œæ•°å³å¯
 				{
 					for (int j = 0; j < DataBase.columns; j++)
 					{
@@ -719,7 +719,7 @@ public class MyWindow
 
 			}
 		});
-		select.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		select.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		select.setEnabled(false);
 		select.setBounds(105, 145, 141, 37);
 		SQL.add(select);
@@ -750,7 +750,7 @@ public class MyWindow
 
 	private void setEnabled()
 	{
-		lblsql.setText("ÇëÊäÈëSQLÓï¾ä");
+		lblsql.setText("è¯·è¾“å…¥SQLè¯­å¥");
 		run.setEnabled(true);
 		lblsql.setEnabled(true);
 		reset.setEnabled(true);

@@ -1,6 +1,6 @@
 
 
-//µÚ¶þÖÜ×÷Òµ
+//ç¬¬äºŒå‘¨ä½œä¸š
 package homework;
 
 class Check{

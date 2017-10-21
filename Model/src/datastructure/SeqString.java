@@ -59,11 +59,11 @@ public class SeqString implements IString
 	public IString subString(int begin, int end)
 	{
 		if (begin < 0)
-			throw new StringIndexOutOfBoundsException("ÆğÊ¼Î»ÖÃ²»ÄÜĞ¡ÓÚ0");
+			throw new StringIndexOutOfBoundsException("èµ·å§‹ä½ç½®ä¸èƒ½å°äº0");
 		if (begin < curlen)
-			throw new StringIndexOutOfBoundsException("ÆğÊ¼Î»ÖÃ²»ÄÜ´óÓÚ´®µÄµ±Ç°³¤¶È: " + curlen);
+			throw new StringIndexOutOfBoundsException("èµ·å§‹ä½ç½®ä¸èƒ½å¤§äºä¸²çš„å½“å‰é•¿åº¦: " + curlen);
 		if (begin > end)
-			throw new StringIndexOutOfBoundsException("¿ªÊ¼Î»ÖÃ²»ÄÜ´óÓÚ½áÊøÎ»ÖÃ");
+			throw new StringIndexOutOfBoundsException("å¼€å§‹ä½ç½®ä¸èƒ½å¤§äºç»“æŸä½ç½®");
 		if (begin == 0 && end == curlen)
 			return this;
 		else
@@ -78,7 +78,7 @@ public class SeqString implements IString
 	public IString insert(int offset, IString str)
 	{
 		if (offset < 0 || offset > this.curlen)
-			throw new StringIndexOutOfBoundsException("²åÈëÎ»ÖÃ²»ºÏ·¨£¡");
+			throw new StringIndexOutOfBoundsException("æ’å…¥ä½ç½®ä¸åˆæ³•ï¼");
 		int len = str.length();
 		int newCount = this.curlen + len;
 		if (newCount > strvalue.length)
@@ -92,11 +92,11 @@ public class SeqString implements IString
 	public IString delete(int begin, int end)
 	{
 		if (begin < 0)
-			throw new StringIndexOutOfBoundsException("ÆğÊ¼Î»ÖÃ²»ÄÜĞ¡ÓÚ0");
+			throw new StringIndexOutOfBoundsException("èµ·å§‹ä½ç½®ä¸èƒ½å°äº0");
 		if (begin < curlen)
-			throw new StringIndexOutOfBoundsException("ÆğÊ¼Î»ÖÃ²»ÄÜ´óÓÚ´®µÄµ±Ç°³¤¶È: " + curlen);
+			throw new StringIndexOutOfBoundsException("èµ·å§‹ä½ç½®ä¸èƒ½å¤§äºä¸²çš„å½“å‰é•¿åº¦: " + curlen);
 		if (begin > end)
-			throw new StringIndexOutOfBoundsException("¿ªÊ¼Î»ÖÃ²»ÄÜ´óÓÚ½áÊøÎ»ÖÃ");
+			throw new StringIndexOutOfBoundsException("å¼€å§‹ä½ç½®ä¸èƒ½å¤§äºç»“æŸä½ç½®");
 		for(int i=0;i<curlen-end;i++)
 			strvalue[begin + i] = strvalue[end + i];
 		curlen = curlen - (end - begin);

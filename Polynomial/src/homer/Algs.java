@@ -1,6 +1,6 @@
 package homer;
 
-// 计算一元多项式
+// 璁＄畻涓�鍏冨椤瑰紡
 public class Algs
 {
 	public static double compute(int n, double a[], double x)

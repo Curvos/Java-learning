@@ -1,12 +1,12 @@
 
 
-//µÚ4´Î×÷Òµ
+//ç¬¬4æ¬¡ä½œä¸š
 package homework;
 
 class Info
 {
-	private String name = "ËÕÖİ´óÑ§";	 
-	private String content = "ÉúÎïĞÅÏ¢Ñ§"  ;	
+	private String name = "è‹å·å¤§å­¦";	 
+	private String content = "ç”Ÿç‰©ä¿¡æ¯å­¦"  ;	
 	private boolean flag = false ;
 	public synchronized void set(String name,String content)
 	{
@@ -90,12 +90,12 @@ class Producer implements Runnable
 		{
 			if(flag)
 			{
-				this.info.set("ËÕÖİ´óÑ§","ÉúÎïĞÅÏ¢Ñ§") ;
+				this.info.set("è‹å·å¤§å­¦","ç”Ÿç‰©ä¿¡æ¯å­¦") ;
 				flag = false ;
 			}
 			else
 			{
-				this.info.set("ÕÂğ©Óî","	JAVA") ;
+				this.info.set("ç« çš“å®‡","	JAVA") ;
 				flag = true ;
 			}
 		}

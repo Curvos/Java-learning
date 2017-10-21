@@ -17,9 +17,9 @@ public class DataBase
 	public static final String password = "root";
 	private static String sql = "Select * from table_1530416012";
 	private static final String driver = "org.gjt.mm.mysql.Driver";
-	private static final String url = "jdbc:mysql://localhost:3306/bio2015";// »ú·¿Êı¾İ¿â£¬Èç²»´æÔÚÇë×ÔĞĞ´´½¨Êı¾İ¿â¡°bio2015!!¡±
+	private static final String url = "jdbc:mysql://localhost:3306/bio2015";// æœºæˆ¿æ•°æ®åº“ï¼Œå¦‚ä¸å­˜åœ¨è¯·è‡ªè¡Œåˆ›å»ºæ•°æ®åº“â€œbio2015!!â€
 	// private static final String url =
-	// "jdbc:mysql://localhost:3306/user_data";// ±¾µØÊı¾İ¿â
+	// "jdbc:mysql://localhost:3306/user_data";// æœ¬åœ°æ•°æ®åº“
 	private static Statement stmt;
 	public static int rows;
 	public static int columns;
@@ -31,31 +31,31 @@ public class DataBase
 		// String driver = "org.gjt.mm.mysql.Driver";
 		// String url = "jdbc:mysql://localhost:3306/user_data";
 
-		// ¼ÓÔØÇı¶¯³ÌĞò
+		// åŠ è½½é©±åŠ¨ç¨‹åº
 		try
 		{
 			Class.forName(driver);
-			// System.out.println("Çı¶¯³ÌĞò¼ÓÔØ³É¹¦");
+			// System.out.println("é©±åŠ¨ç¨‹åºåŠ è½½æˆåŠŸ");
 		} catch (ClassNotFoundException e)
 		{
 			e.printStackTrace();
 		}
 
-		// Á´½ÓÊı¾İ¿â
+		// é“¾æ¥æ•°æ®åº“
 		Connection conn = null;
 		try
 		{
 			conn = DriverManager.getConnection(url, user, password);
 			if (!conn.isClosed())
 			{
-				System.out.println("Á¬½ÓÊı¾İ¿â³É¹¦");
+				System.out.println("è¿æ¥æ•°æ®åº“æˆåŠŸ");
 
 				stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			}
 		} catch (SQLException e)
 		{
-			System.out.println("Á´½ÓÊı¾İ¿âÊ§°Ü: " + e.getMessage());
-			MyWindow.nameField.setText("Á´½ÓÊı¾İ¿âÊ§°Ü");
+			System.out.println("é“¾æ¥æ•°æ®åº“å¤±è´¥: " + e.getMessage());
+			MyWindow.nameField.setText("é“¾æ¥æ•°æ®åº“å¤±è´¥");
 		}
 
 		return conn;
@@ -64,17 +64,17 @@ public class DataBase
 	// public static List<Map<String, Object>> selectAll(Connection conn) throws
 	// SQLException
 	// {
-	// return convertList(stmt.executeQuery(sql)); // ´Ë´¦sqlĞèÒªÓÃstaticĞŞÊÎ why£¿
+	// return convertList(stmt.executeQuery(sql)); // æ­¤å¤„sqléœ€è¦ç”¨staticä¿®é¥° whyï¼Ÿ
 	// }
 
 	public static Object[][] selectAll(Connection conn) throws SQLException
 	{
-		return convert(stmt.executeQuery(sql)); // ´Ë´¦sqlĞèÒªÓÃstaticĞŞÊÎ why£¿
+		return convert(stmt.executeQuery(sql)); // æ­¤å¤„sqléœ€è¦ç”¨staticä¿®é¥° whyï¼Ÿ
 	}
 
 	// private static List<Map<String, Object>> convertList(ResultSet rs) throws
 	// SQLException
-	// {// ½«ResultSet×ª»»ÎªList
+	// {// å°†ResultSetè½¬æ¢ä¸ºList
 	//
 	// List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 	//
@@ -119,7 +119,7 @@ public class DataBase
 		System.out.println();
 		Object[][] objs = new Object[rows][columns];
 		int temp = 0;
-		// ÏÔÊ¾±í¸ñÄÚÈİ
+		// æ˜¾ç¤ºè¡¨æ ¼å†…å®¹
 		while (rs.next())
 		{
 
@@ -160,7 +160,7 @@ public class DataBase
 		System.out.println();
 		Object[][] objs = new Object[rows][columns];
 		int temp = 0;
-		// ÏÔÊ¾±í¸ñÄÚÈİ
+		// æ˜¾ç¤ºè¡¨æ ¼å†…å®¹
 		while (set.next())
 		{
 
@@ -200,7 +200,7 @@ public class DataBase
 		}
 		scan.close();
 		// stmt.execute("INSERT INTO `table_1530416012` VALUES
-		// (1,'12345','370211198106134438','ÕÅÈı',2,'2017-08-03');");
+		// (1,'12345','370211198106134438','å¼ ä¸‰',2,'2017-08-03');");
 	}
 
 	public static void Export() throws SQLException

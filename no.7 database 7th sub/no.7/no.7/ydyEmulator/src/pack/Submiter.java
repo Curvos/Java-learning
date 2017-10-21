@@ -1,8 +1,8 @@
 package pack;
 
 import java.awt.AWTException;
-import java.awt.Robot;//ÎÊÌâ1£º´Ë´¦Eclipse²¹È«Ã»ÓĞRobot ĞèÒª½â¾ö¡£
-//ÎÊÌâ2£ºÎªÊ²Ã´´´½¨Robot±ØĞë´¦ÀíÒì³£
+import java.awt.Robot;//é—®é¢˜1ï¼šæ­¤å¤„Eclipseè¡¥å…¨æ²¡æœ‰Robot éœ€è¦è§£å†³ã€‚
+//é—®é¢˜2ï¼šä¸ºä»€ä¹ˆåˆ›å»ºRobotå¿…é¡»å¤„ç†å¼‚å¸¸
 import java.awt.event.InputEvent;
 
 public class Submiter
@@ -21,7 +21,7 @@ public class Submiter
 	// }
 	//
 	// }
-	// ÎÊÌâ3 Á½¸ö·½·¨¶¼ĞèÒªµ÷ÓÃRobot Ó¦´´½¨Ò»¸öPrivate Robot »¹ÊÇÃ¿¸ö·½·¨µ¥¶ÀÊµÀı»¯Robot?
+	// é—®é¢˜3 ä¸¤ä¸ªæ–¹æ³•éƒ½éœ€è¦è°ƒç”¨Robot åº”åˆ›å»ºä¸€ä¸ªPrivate Robot è¿˜æ˜¯æ¯ä¸ªæ–¹æ³•å•ç‹¬å®ä¾‹åŒ–Robot?
 	public static void autoSubmit()
 	{
 		try

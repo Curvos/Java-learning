@@ -52,50 +52,50 @@ public class UI extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblInputpath = new JLabel("InputPath:");
-		lblInputpath.setFont(new Font("ºÚÌå", Font.PLAIN, 18));
+		lblInputpath.setFont(new Font("é»‘ä½“", Font.PLAIN, 18));
 		lblInputpath.setHorizontalAlignment(SwingConstants.CENTER);
 		lblInputpath.setBounds(61, 49, 108, 16);
 		contentPane.add(lblInputpath);
 		
 		JLabel lblOutputpath = new JLabel("OutputPath:");
-		lblOutputpath.setFont(new Font("ºÚÌå", Font.PLAIN, 18));
+		lblOutputpath.setFont(new Font("é»‘ä½“", Font.PLAIN, 18));
 		lblOutputpath.setHorizontalAlignment(SwingConstants.CENTER);
 		lblOutputpath.setBounds(61, 126, 108, 16);
 		contentPane.add(lblOutputpath);
 		
 		JLabel lblResult = new JLabel("Message:");
-		lblResult.setFont(new Font("ºÚÌå", Font.PLAIN, 18));
+		lblResult.setFont(new Font("é»‘ä½“", Font.PLAIN, 18));
 		lblResult.setHorizontalAlignment(SwingConstants.CENTER);
 		lblResult.setBounds(61, 364, 93, 21);
 		contentPane.add(lblResult);
 		
 		inputPath = new JTextField();
-		inputPath.setFont(new Font("ËÎÌå", Font.PLAIN, 18));
+		inputPath.setFont(new Font("å®‹ä½“", Font.PLAIN, 18));
 		inputPath.setBounds(194, 34, 505, 47);
 		contentPane.add(inputPath);
 		inputPath.setColumns(10);
 		
 		outputPath = new JTextField();
-		outputPath.setFont(new Font("ËÎÌå", Font.PLAIN, 18));
+		outputPath.setFont(new Font("å®‹ä½“", Font.PLAIN, 18));
 		outputPath.setColumns(10);
 		outputPath.setBounds(194, 111, 505, 47);
 		contentPane.add(outputPath);
 		
 		resultContent = new JTextField();
 		resultContent.setEditable(false);
-		resultContent.setFont(new Font("ËÎÌå", Font.PLAIN, 18));
+		resultContent.setFont(new Font("å®‹ä½“", Font.PLAIN, 18));
 		resultContent.setBounds(194, 349, 505, 47);
 		contentPane.add(resultContent);
 		resultContent.setColumns(10);
 		
 		JLabel lblKey = new JLabel("Key:");
-		lblKey.setFont(new Font("ºÚÌå", Font.PLAIN, 18));
+		lblKey.setFont(new Font("é»‘ä½“", Font.PLAIN, 18));
 		lblKey.setHorizontalAlignment(SwingConstants.CENTER);
 		lblKey.setBounds(80, 196, 61, 29);
 		contentPane.add(lblKey);
 		
 		key = new JTextField();
-		key.setFont(new Font("ËÎÌå", Font.PLAIN, 18));
+		key.setFont(new Font("å®‹ä½“", Font.PLAIN, 18));
 		key.setColumns(10);
 		key.setBounds(194, 189, 505, 47);
 		contentPane.add(key);

@@ -13,7 +13,7 @@ public class login extends JFrame
 	// JLabel accountL,nameL;
 	JTextField accountT, nameT;
 	JButton okB, registB;
-	Box baseB1, baseB2, box1, box2, box3; // ´ËµÇÂ¼Ò³Ãæ²ÉÓÃBox²¼¾Ö·½Ê½£»
+	Box baseB1, baseB2, box1, box2, box3; // æ­¤ç™»å½•é¡µé¢é‡‡ç”¨Boxå¸ƒå±€æ–¹å¼ï¼›
 	login_db log;
 
 	login()
@@ -27,13 +27,13 @@ public class login extends JFrame
 
 		accountT = new JTextField(10);
 		nameT = new JTextField(20);
-		okB = new JButton("µÇÂ¼");
-		registB = new JButton("×¢²á");
+		okB = new JButton("ç™»å½•");
+		registB = new JButton("æ³¨å†Œ");
 
 		box1 = Box.createVerticalBox();
-		box1.add(new JLabel("ÕËºÅ£º"));
+		box1.add(new JLabel("è´¦å·ï¼š"));
 		box1.add(Box.createVerticalStrut(8));
-		box1.add(new JLabel("ĞÕÃû"));
+		box1.add(new JLabel("å§“å"));
 
 		box2 = Box.createVerticalBox();
 		box2.add(accountT);
@@ -66,7 +66,7 @@ public class login extends JFrame
 		setLayout(new FlowLayout());
 		setBounds(200, 150, 400, 300);
 		setVisible(true);
-		setTitle("ÓÃ»§µÇÂ¼½çÃæ");
+		setTitle("ç”¨æˆ·ç™»å½•ç•Œé¢");
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 

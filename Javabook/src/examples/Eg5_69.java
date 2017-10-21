@@ -1,5 +1,5 @@
 package examples;
-//在外部访问内部类
+//鍦ㄥ閮ㄨ闂唴閮ㄧ被
 class Outer{
 	private String info="Hello World";
 	class Inner{

@@ -45,7 +45,7 @@ public class Delegate
 		// a = (char) inRead.read();
 		// a = (char) inRead.read();
 		// a = (char) inRead.read();
-		// System.out.println("Ô­»ùÒò×Ö·û´®:");
+		// System.out.println("åŸåŸºå› å­—ç¬¦ä¸²:");
 		// System.out.println(new String(c, 0, len));
 		// System.out.println(s);
 

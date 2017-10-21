@@ -38,23 +38,23 @@ public class login_db extends conn_db implements ActionListener
 	{
 		if (e.getSource() == okB)
 		{
-			if (accT.getText().equals("")) // ÅĞ¶ÏÓÃ»§ÊäÈëÊÇ·ñÎª¿Õ£»
-				JOptionPane.showMessageDialog(null, "ÇëÌîĞ´ÕËºÅ£¡");
+			if (accT.getText().equals("")) // åˆ¤æ–­ç”¨æˆ·è¾“å…¥æ˜¯å¦ä¸ºç©ºï¼›
+				JOptionPane.showMessageDialog(null, "è¯·å¡«å†™è´¦å·ï¼");
 			else if (nameT.getText().equals(""))
-				JOptionPane.showMessageDialog(null, "ÇëÊäÈëĞÕÃû");
+				JOptionPane.showMessageDialog(null, "è¯·è¾“å…¥å§“å");
 			else
 			{
 				String accountT = accT.getText();
 				String namesT = nameT.getText();
 				try
 				{
-					connection(); // ¼ÓÔØconn_dbÀà£¬Á¬½ÓÊı¾İ¿â£»
+					connection(); // åŠ è½½conn_dbç±»ï¼Œè¿æ¥æ•°æ®åº“ï¼›
 					boolean com = compareWithSql(accountT, namesT);
 					if (com)
-						JOptionPane.showMessageDialog(null, "µÇÂ¼³É¹¦");
+						JOptionPane.showMessageDialog(null, "ç™»å½•æˆåŠŸ");
 					else
 					{
-						JOptionPane.showMessageDialog(null, "ÕËºÅ»òĞÕÃû²»ÕıÈ·£¬ÇëÖØĞÂÊäÈë");
+						JOptionPane.showMessageDialog(null, "è´¦å·æˆ–å§“åä¸æ­£ç¡®ï¼Œè¯·é‡æ–°è¾“å…¥");
 						accT.setText("");
 						nameT.setText("");
 					}
@@ -70,7 +70,7 @@ public class login_db extends conn_db implements ActionListener
 		}
 	}
 
-	// ÓÃ»§ÊäÈë¼ì²é
+	// ç”¨æˆ·è¾“å…¥æ£€æŸ¥
 	boolean compareWithSql(String accountT, String namesT) throws Exception
 	{
 		String sql;
@@ -80,7 +80,7 @@ public class login_db extends conn_db implements ActionListener
 		// System.out.println(sql);
 		rs = stmt.executeQuery(sql);
 		while (rs.next())
-		{ // ÓÃ»§ÊäÈëµÄĞÅÏ¢ºÍÊı¾İ¿âÖĞµÄĞÅÏ¢×ö±È½Ï£¬ÅĞ¶ÏÊäÈëÊÇ·ñÕıÈ·£»
+		{ // ç”¨æˆ·è¾“å…¥çš„ä¿¡æ¯å’Œæ•°æ®åº“ä¸­çš„ä¿¡æ¯åšæ¯”è¾ƒï¼Œåˆ¤æ–­è¾“å…¥æ˜¯å¦æ­£ç¡®ï¼›
 			String acc = rs.getString(1);
 			String names = rs.getString(2);
 			if (acc.equals(accountT) && names.equals(namesT))

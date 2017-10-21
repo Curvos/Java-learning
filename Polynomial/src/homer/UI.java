@@ -59,55 +59,55 @@ public class UI extends JFrame
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		// Ö¸Êı±êÇ©
+		// æŒ‡æ•°æ ‡ç­¾
 		JLabel lblPower = new JLabel("\u6B21\u6570n");
-		lblPower.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		lblPower.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		lblPower.setBounds(114, 75, 72, 18);
 		contentPane.add(lblPower);
 
-		// ±äÁ¿±êÇ©
+		// å˜é‡æ ‡ç­¾
 		JLabel lblx = new JLabel("\u53D8\u91CFx0");
-		lblx.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		lblx.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		lblx.setBounds(114, 186, 72, 18);
 		contentPane.add(lblx);
 
-		// ²ÎÊı±êÇ©
+		// å‚æ•°æ ‡ç­¾
 		JLabel lblai = new JLabel("\u7CFB\u6570ai");
-		lblai.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		lblai.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		lblai.setBounds(114, 130, 72, 18);
 		contentPane.add(lblai);
 
-		// Ö¸ÊıÊäÈëÓò
+		// æŒ‡æ•°è¾“å…¥åŸŸ
 		powerField = new JTextField();
 		powerField.setText("5");
 		powerField.setBounds(224, 73, 155, 24);
 		contentPane.add(powerField);
 		powerField.setColumns(10);
 
-		// ²ÎÊıÊäÈëÓò
+		// å‚æ•°è¾“å…¥åŸŸ
 		paraField = new JTextField();
 		paraField.setText("1,2,3,4,5,6");
 		paraField.setColumns(10);
 		paraField.setBounds(224, 128, 155, 24);
 		contentPane.add(paraField);
 
-		// ±äÁ¿ÊäÈëÓò
+		// å˜é‡è¾“å…¥åŸŸ
 		varblField = new JTextField();
 		varblField.setText("5");
 		varblField.setColumns(10);
 		varblField.setBounds(224, 184, 155, 24);
 		contentPane.add(varblField);
 
-		// ¼ÆËã°´Å¥¼°ÊÂ¼ş´¦Àí
+		// è®¡ç®—æŒ‰é’®åŠäº‹ä»¶å¤„ç†
 		JButton sumButton = new JButton("\u6C42\u548C");
 		sumButton.addMouseListener(new MouseAdapter()
 		{
 			public void mouseClicked(MouseEvent e)
 			{
-				// ´ÓÊäÈëÓò»ñÈ¡Ö¸Êı
+				// ä»è¾“å…¥åŸŸè·å–æŒ‡æ•°
 				int power = Integer.parseInt(powerField.getText());
 
-				// ´ÓÊäÈëÓò»ñÈ¡ÒÔ","·Ö¸ôµÄ²ÎÊıÊı×é
+				// ä»è¾“å…¥åŸŸè·å–ä»¥","åˆ†éš”çš„å‚æ•°æ•°ç»„
 				String[] str = paraField.getText().split("\\,");
 				double array[] = new double[str.length];
 				for (int i = 0; i < str.length; i++)
@@ -115,10 +115,10 @@ public class UI extends JFrame
 					array[i] = Double.parseDouble(str[i]);
 				}
 
-				// ´ÓÊäÈëÓò»ñÈ¡±äÁ¿
+				// ä»è¾“å…¥åŸŸè·å–å˜é‡
 				double x0 = Double.parseDouble(varblField.getText());
 
-				// µ÷ÓÃËã·¨£¬Êä³ö½á¹û
+				// è°ƒç”¨ç®—æ³•ï¼Œè¾“å‡ºç»“æœ
 				double result = 0;
 				result = Algs.compute(power, array, x0);
 				resultField.setText(Double.toString(result));

@@ -1,5 +1,5 @@
 
-//可变参数&foreach
+//鍙彉鍙傛暟&foreach
 package examples;
 
 public class Eg_4_23

@@ -13,7 +13,7 @@ public class register extends JFrame
 	JLabel accountLabel, nameLabel;
 	JButton okButton, resetButton;
 	JTextField accountText, nameText;
-	Box baseBox1, baseBox2, box1, box2, box3; // ´Ë×¢²áÒ³Ãæ²ÉÓÃBox²¼¾Ö·½Ê½£»
+	Box baseBox1, baseBox2, box1, box2, box3; // æ­¤æ³¨å†Œé¡µé¢é‡‡ç”¨Boxå¸ƒå±€æ–¹å¼ï¼›
 	// JPanel pane1,pane2;
 
 	register_db regist;
@@ -26,16 +26,16 @@ public class register extends JFrame
 	void init()
 	{
 		setLayout(new FlowLayout());
-		accountLabel = new JLabel("ÕËºÅ");
-		nameLabel = new JLabel("ĞÕÃû");
+		accountLabel = new JLabel("è´¦å·");
+		nameLabel = new JLabel("å§“å");
 		accountText = new JTextField(10);
 		nameText = new JTextField(20);
-		okButton = new JButton("È·¶¨");
-		resetButton = new JButton("ÖØÖÃ");
+		okButton = new JButton("ç¡®å®š");
+		resetButton = new JButton("é‡ç½®");
 
 		regist = new register_db();
 
-		// lab = new JLabel("ÓÃ»§×¢²áÒ³Ãæ");
+		// lab = new JLabel("ç”¨æˆ·æ³¨å†Œé¡µé¢");
 
 		box1 = Box.createVerticalBox();
 		box1.add(accountLabel);
@@ -70,7 +70,7 @@ public class register extends JFrame
 		setBounds(200, 200, 400, 300);
 		setVisible(true);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setTitle("ÓÃ»§×¢²á½çÃæ");
+		setTitle("ç”¨æˆ·æ³¨å†Œç•Œé¢");
 	}
 
 	// void registAction(){

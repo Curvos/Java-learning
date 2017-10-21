@@ -28,21 +28,21 @@ public class AutoMouseTest
 				int h = Toolkit.getDefaultToolkit().getScreenSize().height;
 				while (!win.stop)
 				{
-					// Ëæ»ú²úÉú x,y ×ø±ê
+					// éšæœºäº§ç”Ÿ x,y åæ ‡
 					int x = (int) (Math.random() * w);
 					int y = (int) (Math.random() * h);
-					// Êó±êÒÆ¶¯µ½ x,y
+					// é¼ æ ‡ç§»åŠ¨åˆ° x,y
 					r.mouseMove(x, y);
-					// ÎªÁË²»ÂÒµãÊó±ê£¬ÉèÖÃÌõ¼ş£ºÖ»ÓĞµ±Êó±êµ½ºìÉ«µÄ WIN ÉÏ²Åµã»÷£¡
+					// ä¸ºäº†ä¸ä¹±ç‚¹é¼ æ ‡ï¼Œè®¾ç½®æ¡ä»¶ï¼šåªæœ‰å½“é¼ æ ‡åˆ°çº¢è‰²çš„ WIN ä¸Šæ‰ç‚¹å‡»ï¼
 					if (win.win.getBounds().contains(x, y))
 					{
-						// °´ÏÂÊó±ê
+						// æŒ‰ä¸‹é¼ æ ‡
 						r.mousePress(MouseEvent.BUTTON1_MASK);
-						// ÊÍ·ÅÊó±ê
+						// é‡Šæ”¾é¼ æ ‡
 						r.mouseRelease(MouseEvent.BUTTON1_MASK);
 					}
 					String info = "<html>x:" + x + "<br/>y:" + y;
-					// ÏÔÊ¾Êó±êµ±Ç°×ø±êµÄĞÅÏ¢
+					// æ˜¾ç¤ºé¼ æ ‡å½“å‰åæ ‡çš„ä¿¡æ¯
 					win.setInfo(info);
 					try
 					{
@@ -83,7 +83,7 @@ class Win
 			{
 				stop = true;
 				win.setVisible(false);
-				JOptionPane.showMessageDialog(win, "Êó±êÒÑÒÆ¶¯µ½ÁËWINÉÏÃæ£¬²¢µã»÷ÁËÒ»ÏÂ£¬³ÌĞò½«ÍË³ö£¡");
+				JOptionPane.showMessageDialog(win, "é¼ æ ‡å·²ç§»åŠ¨åˆ°äº†WINä¸Šé¢ï¼Œå¹¶ç‚¹å‡»äº†ä¸€ä¸‹ï¼Œç¨‹åºå°†é€€å‡ºï¼");
 				System.exit(0);
 			}
 		});

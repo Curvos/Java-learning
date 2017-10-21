@@ -1,6 +1,6 @@
 
 
-//µÚ3´Î×÷Òµ
+//ç¬¬3æ¬¡ä½œä¸š
 package homework;
 
 interface Pet
@@ -150,13 +150,13 @@ public class PetShopDemo {
 
 	public static void main(String[] args) {
 		PetShop ps=new PetShop(5);
-		ps.add(new Cat("°×Ã¨","°×É«µÄ",2));
-		ps.add(new Cat("ºÚÃ¨","ºÚÉ«µÄ",3));
-		ps.add(new Cat("»¨Ã¨","»¨É«µÄ",3));
-		ps.add(new Cat("À­²¼À­¶à","»ÆÉ«µÄ",3));
-		ps.add(new Cat("½ðÃ«","½ðÉ«µÄ",3));
-		ps.add(new Cat("»Æ¹·","ºÚÉ«µÄ",3));
-		print(ps.search("ºÚ"));
+		ps.add(new Cat("ç™½çŒ«","ç™½è‰²çš„",2));
+		ps.add(new Cat("é»‘çŒ«","é»‘è‰²çš„",3));
+		ps.add(new Cat("èŠ±çŒ«","èŠ±è‰²çš„",3));
+		ps.add(new Cat("æ‹‰å¸ƒæ‹‰å¤š","é»„è‰²çš„",3));
+		ps.add(new Cat("é‡‘æ¯›","é‡‘è‰²çš„",3));
+		ps.add(new Cat("é»„ç‹—","é»‘è‰²çš„",3));
+		print(ps.search("é»‘"));
 	}
 	public static void print(Pet p[])
 	{

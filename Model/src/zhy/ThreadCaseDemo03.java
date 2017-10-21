@@ -1,9 +1,9 @@
 package zhy;
 
-class Info{	// ¶¨ÒåĞÅÏ¢Àà
-	private String name = "Scathach";	 // ¶¨ÒånameÊôĞÔ
-	private String content = "Queen"  ;		// ¶¨ÒåcontentÊôĞÔ
-	private boolean flag = false ;	// ÉèÖÃ±êÖ¾Î»
+class Info{	// å®šä¹‰ä¿¡æ¯ç±»
+	private String name = "Scathach";	 // å®šä¹‰nameå±æ€§
+	private String content = "Queen"  ;		// å®šä¹‰contentå±æ€§
+	private boolean flag = false ;	// è®¾ç½®æ ‡å¿—ä½
 	public synchronized void set(String name,String content){
 		if(!flag){
 			try{
@@ -12,14 +12,14 @@ class Info{	// ¶¨ÒåĞÅÏ¢Àà
 				e.printStackTrace() ;
 			}
 		}
-		this.setName(name) ;	// ÉèÖÃÃû³Æ
+		this.setName(name) ;	// è®¾ç½®åç§°
 		try{
 			Thread.sleep(300) ;
 		}catch(InterruptedException e){
 			e.printStackTrace() ;
 		}
-		this.setContent(content) ;	// ÉèÖÃÄÚÈİ
-		flag  = false ;	// ¸Ä±ä±êÖ¾Î»£¬±íÊ¾¿ÉÒÔÈ¡×ß
+		this.setContent(content) ;	// è®¾ç½®å†…å®¹
+		flag  = false ;	// æ”¹å˜æ ‡å¿—ä½ï¼Œè¡¨ç¤ºå¯ä»¥å–èµ°
 		super.notify() ;
 	}
 	public synchronized void get(){
@@ -37,7 +37,7 @@ class Info{	// ¶¨ÒåĞÅÏ¢Àà
 		}
 		System.out.println(this.getName() + 
 			" --> " + this.getContent()) ;
-		flag  = true ;	// ¸Ä±ä±êÖ¾Î»£¬±íÊ¾¿ÉÒÔÉú²ú
+		flag  = true ;	// æ”¹å˜æ ‡å¿—ä½ï¼Œè¡¨ç¤ºå¯ä»¥ç”Ÿäº§
 		super.notify() ;
 	}
 	public void setName(String name){
@@ -53,19 +53,19 @@ class Info{	// ¶¨ÒåĞÅÏ¢Àà
 		return this.content ;
 	}
 };
-class Producer implements Runnable{	// Í¨¹ıRunnableÊµÏÖ¶àÏß³Ì
-	private Info info = null ;		// ±£´æInfoÒıÓÃ
+class Producer implements Runnable{	// é€šè¿‡Runnableå®ç°å¤šçº¿ç¨‹
+	private Info info = null ;		// ä¿å­˜Infoå¼•ç”¨
 	public Producer(Info info){
 		this.info = info ;
 	}
 	public void run(){
-		boolean flag = false ;	// ¶¨Òå±ê¼ÇÎ»
+		boolean flag = false ;	// å®šä¹‰æ ‡è®°ä½
 		for(int i=0;i<50;i++){
 			if(flag){
-				this.info.set("Scathach","Queen") ;	// ÉèÖÃÃû³Æ
+				this.info.set("Scathach","Queen") ;	// è®¾ç½®åç§°
 				flag = false ;
 			}else{
-				this.info.set("Emyia","Guardian") ;	// ÉèÖÃÃû³Æ
+				this.info.set("Emyia","Guardian") ;	// è®¾ç½®åç§°
 				flag = true ;
 			}
 		}
@@ -84,9 +84,9 @@ class Consumer implements Runnable{
 };
 public class ThreadCaseDemo03{
 	public static void main(String args[]){
-		Info info = new Info();	// ÊµÀı»¯Info¶ÔÏó
-		Producer pro = new Producer(info) ;	// Éú²úÕß
-		Consumer con = new Consumer(info) ;	// Ïû·ÑÕß
+		Info info = new Info();	// å®ä¾‹åŒ–Infoå¯¹è±¡
+		Producer pro = new Producer(info) ;	// ç”Ÿäº§è€…
+		Consumer con = new Consumer(info) ;	// æ¶ˆè´¹è€…
 		new Thread(pro).start() ;
 		new Thread(con).start() ;
 	}

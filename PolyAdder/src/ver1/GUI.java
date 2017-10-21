@@ -70,13 +70,13 @@ public class GUI
 
 		JLabel lblNewLabel = new JLabel(
 				"\u8BF7\u8F93\u5165\u591A\u9879\u5F0FA\u5404\u9879\u7CFB\u6570\u548C\u6307\u6570");
-		lblNewLabel.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		lblNewLabel.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		lblNewLabel.setBounds(132, 68, 227, 43);
 		panel_1.add(lblNewLabel);
 
 		areaA = new JTextField();
 		areaA.setText("1.5,2 4.3,5 7.4,6 3.2,7");
-		areaA.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		areaA.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		areaA.setBounds(14, 13, 490, 43);
 		panel_1.add(areaA);
 		areaA.setColumns(10);
@@ -123,20 +123,20 @@ public class GUI
 		frame.getContentPane().add(panel);
 
 		JLabel lblb = new JLabel("\u8BF7\u8F93\u5165\u591A\u9879\u5F0FB\u5404\u9879\u7CFB\u6570\u548C\u6307\u6570");
-		lblb.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		lblb.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		lblb.setBounds(132, 68, 227, 43);
 		panel.add(lblb);
 
 		areaB = new JTextField();
 		areaB.setText("2.0,3 9.0,4 2.2,7");
-		areaB.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		areaB.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		areaB.setColumns(10);
 		areaB.setBounds(14, 13, 490, 43);
 		panel.add(areaB);
 
 		JLabel label = new JLabel(
 				"\u8F93\u5165\u683C\u5F0F\uFF1A\u7CFB\u65701,\u6307\u65701 \u7CFB\u65702,\u6307\u65702");
-		label.setFont(new Font("ËÎÌå", Font.PLAIN, 16));
+		label.setFont(new Font("å®‹ä½“", Font.PLAIN, 16));
 		label.setBounds(14, 381, 280, 84);
 		frame.getContentPane().add(label);
 	}

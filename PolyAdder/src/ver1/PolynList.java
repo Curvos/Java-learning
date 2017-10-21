@@ -96,8 +96,8 @@ public class PolynList extends LinkList
 			try
 			{
 				PolynNode e = (PolynNode) get(i);
-				result = result + "µÚ " + (i + 1) + " Ïî" + "ÏµÊýÎª£º" + e.coef + " Ö¸ÊýÎª: " + e.expn + "\r\n";
-				// System.out.println("ÏµÊýÎª£º" + e.coef + "Ö¸ÊýÎª: " + e.expn);
+				result = result + "ç¬¬ " + (i + 1) + " é¡¹" + "ç³»æ•°ä¸ºï¼š" + e.coef + " æŒ‡æ•°ä¸º: " + e.expn + "\r\n";
+				// System.out.println("ç³»æ•°ä¸ºï¼š" + e.coef + "æŒ‡æ•°ä¸º: " + e.expn);
 			} catch (Exception e)
 			{
 				e.printStackTrace();

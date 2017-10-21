@@ -50,7 +50,7 @@ public class weihu2015bio extends JDialog {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
 				} catch (ClassNotFoundException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
@@ -62,14 +62,14 @@ public class weihu2015bio extends JDialog {
 				 try {
 					con=DriverManager.getConnection(url,"root","root");
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
 				try {
 					stmt = con.createStatement();
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				// create insert sql
@@ -80,13 +80,13 @@ public class weihu2015bio extends JDialog {
 				    try {
 						 int result=stmt.executeUpdate(insertSql);
 						 if(result==0){
-							 textField_1.setText("Ôö¼ÓĞÅÏ¢Ê§°Ü£¡£¡");
+							 textField_1.setText("å¢åŠ ä¿¡æ¯å¤±è´¥ï¼ï¼");
 						 }
 						 else{
-							 textField_1.setText("Ôö¼ÓĞÅÏ¢³É¹¦£¡£¡");
+							 textField_1.setText("å¢åŠ ä¿¡æ¯æˆåŠŸï¼ï¼");
 						 }
 					} catch (SQLException ee) {
-						// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+						// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 						ee.printStackTrace();
 					} 
 				    
@@ -105,7 +105,7 @@ public class weihu2015bio extends JDialog {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
 				} catch (ClassNotFoundException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
@@ -117,14 +117,14 @@ public class weihu2015bio extends JDialog {
 				 try {
 					con=DriverManager.getConnection(url,"root","root");
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
 				try {
 					stmt = con.createStatement();
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				// create insert sql
@@ -136,13 +136,13 @@ public class weihu2015bio extends JDialog {
 				    try {
 						 int result=stmt.executeUpdate(updateSql);
 						 if(result==0){
-							 textField_1.setText("ĞŞ¸ÄĞÅÏ¢Ê§°Ü£¡£¡");
+							 textField_1.setText("ä¿®æ”¹ä¿¡æ¯å¤±è´¥ï¼ï¼");
 						 }
 						 else{
-							 textField_1.setText("ĞŞ¸ÄĞÅÏ¢³É¹¦£¡£¡");
+							 textField_1.setText("ä¿®æ”¹ä¿¡æ¯æˆåŠŸï¼ï¼");
 						 }
 					} catch (SQLException ee) {
-						// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+						// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 						ee.printStackTrace();
 					} 
 				    
@@ -158,7 +158,7 @@ public class weihu2015bio extends JDialog {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
 				} catch (ClassNotFoundException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
@@ -170,14 +170,14 @@ public class weihu2015bio extends JDialog {
 				 try {
 					con=DriverManager.getConnection(url,"root","root");
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
 				try {
 					stmt = con.createStatement();
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				// create insert sql
@@ -188,13 +188,13 @@ public class weihu2015bio extends JDialog {
 				    try {
 						 int result=stmt.executeUpdate(deleteSql);
 						 if(result==0){
-							 textField_1.setText("É¾³ıĞÅÏ¢Ê§°Ü£¡£¡");
+							 textField_1.setText("åˆ é™¤ä¿¡æ¯å¤±è´¥ï¼ï¼");
 						 }
 						 else{
-							 textField_1.setText("É¾³ıĞÅÏ¢³É¹¦£¡£¡");
+							 textField_1.setText("åˆ é™¤ä¿¡æ¯æˆåŠŸï¼ï¼");
 						 }
 					} catch (SQLException ee) {
-						// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+						// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 						ee.printStackTrace();
 					} 
 				    
@@ -210,7 +210,7 @@ public class weihu2015bio extends JDialog {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
 				} catch (ClassNotFoundException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
@@ -222,14 +222,14 @@ public class weihu2015bio extends JDialog {
 				 try {
 					con=DriverManager.getConnection(url,"root","root");
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				
 				try {
 					stmt = con.createStatement();
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				// create insert sql
@@ -240,14 +240,14 @@ public class weihu2015bio extends JDialog {
 				try {
 					 rs=stmt.executeQuery(selectSql);
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				} 
 			    
 			    try {
 					moreRecords = rs.next();
 					if(moreRecords){
-						textField_1.setText("ÓĞ¸ÃÑ§ÉúµÄĞÅÏ¢");
+						textField_1.setText("æœ‰è¯¥å­¦ç”Ÿçš„ä¿¡æ¯");
 						String name=rs.getString("name");
 				    	int id=rs.getInt("id");
 				    	//System.out.println("name:"+name+" age:"+age);
@@ -255,10 +255,10 @@ public class weihu2015bio extends JDialog {
 				    	txtLiman.setText(""+name);
 				    }
 					else{
-						textField_1.setText("Ã»ÓĞ¸ÃÑ§ÉúµÄĞÅÏ¢");						
+						textField_1.setText("æ²¡æœ‰è¯¥å­¦ç”Ÿçš„ä¿¡æ¯");						
 					}
 				} catch (SQLException ee) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					ee.printStackTrace();
 				}
 				

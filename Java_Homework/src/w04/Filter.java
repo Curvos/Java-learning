@@ -16,18 +16,18 @@ public class Filter
 		Scanner scan = new Scanner(new FileReader(f));
 		while (scan.hasNext())
 		{
-			// flagÎªfalseÊ±²»¶Ô×Ö·û´®½øĞĞ¹ıÂË
+			// flagä¸ºfalseæ—¶ä¸å¯¹å­—ç¬¦ä¸²è¿›è¡Œè¿‡æ»¤
 			if (flag == false)
 			{
 				temp = scan.nextLine() + System.lineSeparator();
 				str = str + temp;
-				// Èç¹û¶ÁÈ¡Ò»ĞĞÖĞº¬ÓĞ¡°>¡±£¬½«flagÖÃÎªtrue
+				// å¦‚æœè¯»å–ä¸€è¡Œä¸­å«æœ‰â€œ>â€ï¼Œå°†flagç½®ä¸ºtrue
 				if (temp.startsWith(">"))
 					flag = true;
 				continue;
 			}
 
-			// flagÎªtrue£¬¶Ô×Ö·û´®½øĞĞ¹ıÂË²¢Á¬½Ó¶ÁÈ¡µÄ×Ö·û´®
+			// flagä¸ºtrueï¼Œå¯¹å­—ç¬¦ä¸²è¿›è¡Œè¿‡æ»¤å¹¶è¿æ¥è¯»å–çš„å­—ç¬¦ä¸²
 			if (flag == true)
 			{
 

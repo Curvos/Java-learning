@@ -9,7 +9,7 @@ public class TextFileEncryption extends SeqString
 {
 
 
-	public void encryptFile(String inputpath, String outputpath, int key) throws IOException // ´ÓÖ¸¶¨ÎÄ±¾ÎÄ¼şÖĞ¶ÁÈ¡×Ö·û´®
+	public void encryptFile(String inputpath, String outputpath, int key) throws IOException // ä»æŒ‡å®šæ–‡æœ¬æ–‡ä»¶ä¸­è¯»å–å­—ç¬¦ä¸²
 	{
 		FileReader fin = new FileReader(inputpath.toString());
 		BufferedReader bin = new BufferedReader(fin);
@@ -33,7 +33,7 @@ public class TextFileEncryption extends SeqString
 	}
 
 
-	public void decryptFile(SeqString encryptedfilename, SeqString originalfilename, int key) throws IOException // ´ÓÖ¸¶¨ÎÄ±¾ÎÄ¼şÖĞ¶ÁÈ¡×Ö·û´®
+	public void decryptFile(SeqString encryptedfilename, SeqString originalfilename, int key) throws IOException // ä»æŒ‡å®šæ–‡æœ¬æ–‡ä»¶ä¸­è¯»å–å­—ç¬¦ä¸²
 	{
 		FileReader fin = new FileReader(encryptedfilename.toString());
 		BufferedReader bin = new BufferedReader(fin);
@@ -63,7 +63,7 @@ public class TextFileEncryption extends SeqString
 		int ch;
 		for (int i = 0; i < s.length(); i++)
 		{
-			ch = s.charAt(i) ^ (((int) Math.sqrt(key)) % 126 + 1); // ¼ÓÃÜ
+			ch = s.charAt(i) ^ (((int) Math.sqrt(key)) % 126 + 1); // åŠ å¯†
 			if (ch == 13)
 			{
 				ch = ch + 1;

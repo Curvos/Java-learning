@@ -18,7 +18,7 @@ public class conn_db
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(url);
-			System.out.println("连接成功");
+			System.out.println("杩炴帴鎴愬姛");
 			// stmt = con.createStatement();
 		} catch (SQLException e)
 		{

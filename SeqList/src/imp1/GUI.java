@@ -84,12 +84,12 @@ public class GUI
 		JTextArea displayArea = new JTextArea();
 		displayArea.setBounds(14, 13, 227, 200);
 		panel_1.add(displayArea);
-		displayArea.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 17));
+		displayArea.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 17));
 		displayArea.setWrapStyleWord(true);
 		displayArea.setLineWrap(true);
 
 		JLabel creList = new JLabel("\u521B\u5EFA\u7EBF\u6027\u8868");
-		creList.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		creList.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		creList.setBounds(40, 28, 105, 38);
 		frame.getContentPane().add(creList);
 
@@ -102,7 +102,7 @@ public class GUI
 		JLabel label = new JLabel("\u5C06");
 		label.setBounds(14, 13, 26, 38);
 		panel.add(label);
-		label.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		insElem = new JTextField();
 		insElem.setBounds(67, 17, 65, 32);
@@ -114,7 +114,7 @@ public class GUI
 		JLabel label_3 = new JLabel("\u63D2\u5165");
 		label_3.setBounds(142, 13, 46, 38);
 		panel.add(label_3);
-		label_3.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_3.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		insIndex = new JTextField();
 		insIndex.setBounds(184, 17, 71, 32);
@@ -141,11 +141,11 @@ public class GUI
 					e1.printStackTrace();
 				} finally
 				{
-					displayArea.setText("ÒÑ½«ÔªËØ " + elem + " ²åÈëÎ»ÖÃ " + index + ".");
+					displayArea.setText("å·²å°†å…ƒç´  " + elem + " æ’å…¥ä½ç½® " + index + ".");
 				}
 			}
 		});
-		button_4.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_4.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button_5 = new JButton("\u5220\u9664");
 		button_5.setEnabled(false);
@@ -165,16 +165,16 @@ public class GUI
 					e1.printStackTrace();
 				} finally
 				{
-					displayArea.setText("ÒÑÉ¾³ıÎ»ÖÃÎª " + remIndex + " µÄÔªËØ.");
+					displayArea.setText("å·²åˆ é™¤ä½ç½®ä¸º " + remIndex + " çš„å…ƒç´ .");
 				}
 			}
 		});
-		button_5.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_5.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JLabel label_4 = new JLabel("\u7684\u5143\u7D20\u5220\u9664");
 		label_4.setBounds(163, 76, 105, 38);
 		panel.add(label_4);
-		label_4.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_4.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		dropElem = new JTextField();
 		dropElem.setBounds(96, 78, 53, 32);
@@ -186,12 +186,12 @@ public class GUI
 		JLabel label_1 = new JLabel("\u5C06\u4F4D\u7F6E\u4E3A");
 		label_1.setBounds(14, 76, 105, 38);
 		panel.add(label_1);
-		label_1.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_1.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JLabel label_2 = new JLabel("\u67E5\u8BE2");
 		label_2.setBounds(14, 132, 53, 38);
 		panel.add(label_2);
-		label_2.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_2.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		indexElem = new JTextField();
 		indexElem.setBounds(53, 136, 66, 32);
@@ -203,7 +203,7 @@ public class GUI
 		JLabel label_5 = new JLabel("\u7B2C\u4E00\u6B21\u51FA\u73B0\u7684\u4F4D\u7F6E");
 		label_5.setBounds(122, 132, 147, 38);
 		panel.add(label_5);
-		label_5.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_5.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button_6 = new JButton("\u67E5\u8BE2");
 		button_6.setEnabled(false);
@@ -215,13 +215,13 @@ public class GUI
 			{
 				Object elem = indexElem.getText();
 				int index = list.indexOf(elem);
-				displayArea.setText("ÔªËØ " + elem + " µÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª " + index + ".");
+				displayArea.setText("å…ƒç´  " + elem + " ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º " + index + ".");
 			}
 		});
-		button_6.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_6.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JLabel label_6 = new JLabel("\u53D6\u51FA\u4F4D\u7F6E\u4E3A");
-		label_6.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_6.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		label_6.setBounds(14, 183, 105, 38);
 		panel.add(label_6);
 
@@ -233,7 +233,7 @@ public class GUI
 		panel.add(getFiled);
 
 		JLabel label_7 = new JLabel("\u7684\u5143\u7D20");
-		label_7.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		label_7.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		label_7.setBounds(163, 183, 105, 38);
 		panel.add(label_7);
 
@@ -244,10 +244,10 @@ public class GUI
 			{
 				int index = Integer.parseInt(getFiled.getText());
 				Object ob = list.get(index);
-				displayArea.setText("È¡³öÔªËØ " + String.valueOf(ob));
+				displayArea.setText("å–å‡ºå…ƒç´  " + String.valueOf(ob));
 			}
 		});
-		button_7.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_7.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		button_7.setEnabled(false);
 		button_7.setBounds(281, 182, 115, 36);
 		panel.add(button_7);
@@ -261,10 +261,10 @@ public class GUI
 			public void actionPerformed(ActionEvent e)
 			{
 				String str = list.display();
-				displayArea.setText("µ±Ç°Ë³Ğò±í: " + str);
+				displayArea.setText("å½“å‰é¡ºåºè¡¨: " + str);
 			}
 		});
-		butDisplay.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		butDisplay.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button_1 = new JButton("\u7F6E\u7A7A");
 		button_1.setEnabled(false);
@@ -275,10 +275,10 @@ public class GUI
 			public void actionPerformed(ActionEvent e)
 			{
 				list.clear();
-				displayArea.setText("ÒÑ½«µ±Ç°Ë³Ğò±íÇå¿Õ.");
+				displayArea.setText("å·²å°†å½“å‰é¡ºåºè¡¨æ¸…ç©º.");
 			}
 		});
-		button_1.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_1.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button_2 = new JButton("\u5224\u7A7A");
 		button_2.setEnabled(false);
@@ -290,12 +290,12 @@ public class GUI
 			{
 				boolean flag = list.isEmpty();
 				if (flag == true)
-					displayArea.setText("µ±Ç°Ë³Ğò±íÎª¿Õ.");
+					displayArea.setText("å½“å‰é¡ºåºè¡¨ä¸ºç©º.");
 				else
-					displayArea.setText("µ±Ç°Ë³Ğò±í·Ç¿Õ.");
+					displayArea.setText("å½“å‰é¡ºåºè¡¨éç©º.");
 			}
 		});
-		button_2.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_2.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button_3 = new JButton("\u957F\u5EA6");
 		button_3.setEnabled(false);
@@ -306,24 +306,24 @@ public class GUI
 			public void actionPerformed(ActionEvent e)
 			{
 				String length = Integer.toString(list.length());
-				displayArea.setText("µ±Ç°Ë³Ğò±íµÄ³¤¶ÈÎª " + length + ".");
+				displayArea.setText("å½“å‰é¡ºåºè¡¨çš„é•¿åº¦ä¸º " + length + ".");
 			}
 		});
-		button_3.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button_3.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 
 		JButton button = new JButton("\u521B\u5EFA");
-		button.setFont(new Font("ËÎÌå", Font.PLAIN, 17));
+		button.setFont(new Font("å®‹ä½“", Font.PLAIN, 17));
 		button.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
 				int maxSize = Integer.parseInt(creField.getText());
 				if (maxSize < 0)
-					displayArea.setText("Ë³Ğò±í´óĞ¡±ØĞë´óÓÚ0£¡");
+					displayArea.setText("é¡ºåºè¡¨å¤§å°å¿…é¡»å¤§äº0ï¼");
 				else
 				{
 					list = new SeqList(maxSize);
-					displayArea.setText("ÒÑ´´½¨´óĞ¡Îª " + maxSize + " µÄË³Ğò±í.");
+					displayArea.setText("å·²åˆ›å»ºå¤§å°ä¸º " + maxSize + " çš„é¡ºåºè¡¨.");
 					button_1.setEnabled(true);
 					button_2.setEnabled(true);
 					button_3.setEnabled(true);
