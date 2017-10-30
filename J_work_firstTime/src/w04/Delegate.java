@@ -10,7 +10,7 @@ public class Delegate
 	{
 		File f = new File("res" + File.separator + "sample_d.txt");
 		Filter Genes = new Filter();
-		String r;
+		char[] r;
 		r = Genes.Filt(f);
 
 		/*

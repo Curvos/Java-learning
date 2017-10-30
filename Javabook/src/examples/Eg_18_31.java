@@ -1,5 +1,6 @@
 package examples;
 
+import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
@@ -16,6 +17,27 @@ class MyKeyHandle extends JFrame implements KeyListener
 		JScrollPane scr = new JScrollPane(text);
 		scr.setBounds(5, 5, 300, 200);
 
+	}
+
+	@Override
+	public void keyPressed(KeyEvent arg0)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent arg0)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0)
+	{
+		// TODO Auto-generated method stub
+		
 	}
 }
 
