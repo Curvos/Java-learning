@@ -1,6 +1,7 @@
 package indi.zhy;
 
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -25,7 +26,7 @@ public class GUI
 	public static JTextField tfVadj;
 	public static JTextField tfV;
 	public static JTextField tfW;
-	private MGraph mgr;
+	private ALGraph mgr;
 
 	/**
 	 * Launch the application.
@@ -63,13 +64,13 @@ public class GUI
 	{
 		frame = new JFrame();
 		frame.setResizable(false);
-		frame.setTitle("图(邻接表)的创建及其操作");
-		frame.setBounds(100, 100, 582, 532);
+		frame.setTitle("图的创建及其操作");
+		frame.setBounds(100, 100, 582, 555);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		tfVexNum = new JTextField();
-		tfVexNum.setText("5");
+		tfVexNum.setText("7");
 		tfVexNum.setBounds(381, 49, 51, 41);
 		frame.getContentPane().add(tfVexNum);
 		tfVexNum.setColumns(10);
@@ -83,7 +84,7 @@ public class GUI
 		frame.getContentPane().add(label);
 
 		tfArcNum = new JTextField();
-		tfArcNum.setText("3");
+		tfArcNum.setText("8");
 		tfArcNum.setColumns(10);
 		tfArcNum.setBounds(499, 49, 51, 41);
 		frame.getContentPane().add(tfArcNum);
@@ -93,7 +94,7 @@ public class GUI
 		frame.getContentPane().add(label_1);
 
 		tfVexs = new JTextField();
-		tfVexs.setText("A,B,C,D,E");
+		tfVexs.setText("A,B,C,D,E,F,G");
 		tfVexs.setColumns(10);
 		tfVexs.setBounds(167, 103, 383, 41);
 		frame.getContentPane().add(tfVexs);
@@ -103,7 +104,8 @@ public class GUI
 		frame.getContentPane().add(label_2);
 
 		tfArcs = new JTextField();
-		tfArcs.setText("A B 3,B D 12,E A 5");
+		tfArcs.setFont(new Font("宋体", Font.PLAIN, 14));
+		tfArcs.setText("A B 3,B D 12,E A 5,E G 9,B G 25,E F 2,F A 8,D F 5");
 		tfArcs.setColumns(10);
 		tfArcs.setBounds(167, 157, 383, 41);
 		frame.getContentPane().add(tfArcs);
@@ -150,13 +152,13 @@ public class GUI
 		frame.getContentPane().add(tfVadj);
 
 		tfV = new JTextField();
-		tfV.setText("1");
+		tfV.setText("0");
 		tfV.setColumns(10);
 		tfV.setBounds(464, 415, 38, 41);
 		frame.getContentPane().add(tfV);
 
 		tfW = new JTextField();
-		tfW.setText("0");
+		tfW.setText("5");
 		tfW.setColumns(10);
 		tfW.setBounds(512, 415, 38, 41);
 		frame.getContentPane().add(tfW);
@@ -175,7 +177,7 @@ public class GUI
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
-				mgr = new MGraph();
+				mgr = new ALGraph();
 				promt.setText("Success!");
 				mgr.createGraph();
 			}
@@ -260,7 +262,7 @@ public class GUI
 				promt.setText("边数: " + String.valueOf(mgr.getArcNum()));
 			}
 		});
-		btGetArcs.setBounds(366, 307, 184, 41);
+		btGetArcs.setBounds(304, 307, 118, 41);
 		frame.getContentPane().add(btGetArcs);
 
 		JButton btGetVexs = new JButton("顶点数");
@@ -272,7 +274,7 @@ public class GUI
 				promt.setText(String.valueOf("顶点数: " + mgr.getVexNum()));
 			}
 		});
-		btGetVexs.setBounds(167, 307, 185, 41);
+		btGetVexs.setBounds(167, 307, 123, 41);
 		frame.getContentPane().add(btGetVexs);
 
 		JButton btFindVex = new JButton("查找顶点");
@@ -285,5 +287,56 @@ public class GUI
 		});
 		btFindVex.setBounds(167, 361, 93, 41);
 		frame.getContentPane().add(btFindVex);
+
+		JButton btnGetKind = new JButton("类型");
+		btnGetKind.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				promt.setText("图的类型: " + String.valueOf(mgr.getKind()));
+			}
+		});
+		btnGetKind.setBounds(432, 307, 118, 41);
+		frame.getContentPane().add(btnGetKind);
+
+		JButton btnBFS = new JButton("BFS");
+		btnBFS.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					BTraverser.BFSTraverse(mgr);
+					promt.setText("广度遍历: " + BTraverser.sb);
+					BTraverser.sb.setLength(0);
+				} catch (Exception e1)
+				{
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnBFS.setBounds(167, 469, 188, 41);
+		frame.getContentPane().add(btnBFS);
+
+		JButton btnDFS = new JButton("DFS");
+		btnDFS.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					DTraverser.DFSTraverse(mgr);
+					promt.setText("深度遍历: " + DTraverser.sb);
+					DTraverser.sb.setLength(0);
+				} catch (Exception e1)
+				{
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnDFS.setBounds(362, 469, 188, 41);
+		frame.getContentPane().add(btnDFS);
 	}
 }
